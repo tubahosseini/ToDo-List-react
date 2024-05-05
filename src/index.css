@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* bg:#f3f4f6 */
+/* bg-todo:#2968eb */
+/* low:#21c559 */
+/* btn-delete :#f04143 */
+/* haight:#ec453f */
+/* medium:#e7b208 */
+/* btn-add:#45e381 */
+
+/* plugins: [react()],
+server:{
+port:4040
+} */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #dcdada;
+}
