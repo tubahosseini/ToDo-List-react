@@ -5,9 +5,9 @@ export default function TaskItem() {
     <div className="flex justify-between py-2 border-b">
       <div className="flex gap-2">
         <input type="checkbox" id="checkbox" name="checkbox" />
-        <h3>task 1</h3>
-        <div className="bg-[#ec453f] px-1 rounded-md text-white font-semibold">
-          high
+        <h3 className="font-bold">Task 1</h3>
+        <div className="bg-[#e7a408] px-2 rounded-md text-white font-semibold">
+          Medium
         </div>
       </div>
       <div>
