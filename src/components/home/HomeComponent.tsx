@@ -1,6 +1,3 @@
-import AddButton from "./addButton/AddButton";
-import AddTaskItem from "./addTaskItem/AddTaskItem";
-import SelectPriority from "./selectPriority/SelectPriority";
 import TaskItem from "./taskItem/TaskItem";
 
 export default function HomeComponent() {
@@ -14,17 +11,24 @@ export default function HomeComponent() {
           <TaskItem />
           <TaskItem />
           <TaskItem />
-          <TaskItem />
-          <TaskItem />
-          <TaskItem />
-          <TaskItem />
         </div>
         <div className="flex justify-between items-center ml-5">
-          <AddTaskItem />
-
+          <input
+            type="text"
+            placeholder="Task name"
+            className="my-4 outline-none border-none w-1/2"
+          />
           <div className="flex w-1/2 justify-end mr-5">
-            <SelectPriority />
-            <AddButton/>
+            <div>
+              <select className="outline-none">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+              </select>
+            </div>
+            <button className="bg-[#45e381] rounded-md px-2 py-1 text-white whitespace-nowrap">
+              Add Task
+            </button>
           </div>
         </div>
       </div>
